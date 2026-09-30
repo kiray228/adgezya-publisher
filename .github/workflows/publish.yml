@@ -1,0 +1,47 @@
+name: Публикация по расписанию
+
+on:
+  schedule:
+    - cron: "5 * * * *"   # каждый час в :05 (UTC); время постов в queue.json — по Алматы
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "id поста, чтобы опубликовать сразу (пусто — всё, что пора)"
+        required: false
+      dry_run:
+        description: "только проверить (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Публикация
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ github.event.inputs.only }}" ]; then ARGS="$ARGS --only ${{ github.event.inputs.only }}"; fi
+          python publish.py $ARGS
+      - name: Сохранить журнал публикаций
+        if: always()
+        run: |
+          git config user.name "adgezya-bot"
+          git config user.email "adgezya-bot@users.noreply.github.com"
+          git add state/published.json
+          git diff --cached --quiet || (git commit -m "Журнал публикаций" && git push)
