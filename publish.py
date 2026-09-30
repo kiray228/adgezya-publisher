@@ -168,6 +168,12 @@ def check_login():
             print(f"✗ {platform}: ключ не задан")
             ok = False
             continue
+        # только тип ключа, без раскрытия: IGAA… — Instagram Login, TH… — Threads, EAA… — Facebook
+        junk = [n for n, bad in (("пробелы/переносы", token != token.strip() or " " in token),
+                                 ("кавычки", '"' in token or "'" in token)) if bad]
+        print(f"· {platform}: ключ начинается с «{token.strip()[:4]}…», длина {len(token.strip())}"
+              + (f", есть {', '.join(junk)}" if junk else ""))
+        token = token.strip().strip('"').strip("'")
         try:
             me = call("GET", url, {"fields": fields, "access_token": token})
             print(f"✓ {platform}: вход выполнен — @{me.get('username')} ({me.get('account_type', 'аккаунт')})")
