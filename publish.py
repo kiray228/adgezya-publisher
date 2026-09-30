@@ -158,7 +158,28 @@ def check_url(url):
         return f"НЕДОСТУПЕН ({e})"
 
 
+def check_login():
+    """Проверка ключей: входим в каждую сеть и показываем аккаунт, ничего не публикуя."""
+    ok = True
+    for platform, url, fields in (("instagram", f"{IG_API}/me", "user_id,username,account_type"),
+                                  ("threads", f"{TH_API}/me", "id,username")):
+        token = os.environ.get(PUBLISHERS[platform][0])
+        if not token:
+            print(f"✗ {platform}: ключ не задан")
+            ok = False
+            continue
+        try:
+            me = call("GET", url, {"fields": fields, "access_token": token})
+            print(f"✓ {platform}: вход выполнен — @{me.get('username')} ({me.get('account_type', 'аккаунт')})")
+        except ApiError as e:
+            print(f"✗ {platform}: {e}")
+            ok = False
+    sys.exit(0 if ok else 1)
+
+
 def main():
+    if "--check" in sys.argv:
+        check_login()
     dry = "--dry-run" in sys.argv
     only = sys.argv[sys.argv.index("--only") + 1] if "--only" in sys.argv else None
     queue = json.load(open(QUEUE, encoding="utf-8"))
