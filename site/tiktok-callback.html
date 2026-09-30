@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Подключение TikTok — Adgezya Posting</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="wrap"><img src="app_icon.png" alt=""><b>АДГЕЗИЯ</b></div></header>
+<main class="wrap"><div class="card">
+<h1 id="title">Подключение TikTok</h1>
+<div id="ok" hidden>
+  <p>TikTok разрешил доступ. Осталось передать этот одноразовый код публикатору:</p>
+  <code class="box" id="code"></code>
+  <p><button id="copy">Скопировать код</button> <span id="copied" class="muted" hidden>скопировано ✓</span></p>
+  <ol>
+    <li>Откройте <a id="run" target="_blank">Actions → «TikTok: подключение»</a>.</li>
+    <li>Нажмите <b>Run workflow</b>, вставьте код в поле <b>code</b> и нажмите зелёную кнопку <b>Run workflow</b>.</li>
+    <li>Код действует несколько минут и срабатывает один раз — если не успели, просто войдите в TikTok заново.</li>
+  </ol>
+</div>
+<div id="err" hidden>
+  <p>TikTok не выдал доступ: <b id="errtext"></b></p>
+  <p class="muted">Попробуйте войти ещё раз по ссылке из инструкции.</p>
+</div>
+<div id="none" hidden><p class="muted">Эта страница открывается автоматически после входа в TikTok.</p></div>
+</div></main>
+<script>
+  const q = new URLSearchParams(location.search);
+  const code = q.get("code"), err = q.get("error_description") || q.get("error");
+  document.getElementById("run").href = "https://github.com/kiray228/adgezya-publisher/actions/workflows/tiktok-connect.yml";
+  if (code) {
+    document.getElementById("ok").hidden = false;
+    document.getElementById("code").textContent = code;
+    document.getElementById("copy").onclick = async () => {
+      try { await navigator.clipboard.writeText(code); document.getElementById("copied").hidden = false; } catch (e) {}
+    };
+  } else if (err) {
+    document.getElementById("err").hidden = false;
+    document.getElementById("errtext").textContent = err;
+  } else {
+    document.getElementById("none").hidden = false;
+  }
+</script>
+</body></html>

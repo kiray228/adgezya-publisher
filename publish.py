@@ -140,7 +140,22 @@ def th_publish(item, token):
     return mid, link
 
 
-PUBLISHERS = {"instagram": ("IG_TOKEN", ig_publish), "threads": ("THREADS_TOKEN", th_publish)}
+# ------------------------------------------------------------------ TikTok
+
+def tt_publish(item, _refresh_token):
+    import tiktok
+    media = item.get("media", [])
+    if not media or not media[0].lower().endswith(".mp4"):
+        raise ApiError("TikTok: публикуем только видео (.mp4)")
+    text = item.get("tiktok_text") or item.get("caption", "")
+    try:
+        return tiktok.publish_video(os.path.join(HERE, media[0]), text)
+    except tiktok.TikTokError as e:
+        raise ApiError(str(e)) from None
+
+
+PUBLISHERS = {"instagram": ("IG_TOKEN", ig_publish), "threads": ("THREADS_TOKEN", th_publish),
+              "tiktok": ("TIKTOK_REFRESH_TOKEN", tt_publish)}
 
 
 # ------------------------------------------------------------------ main
@@ -191,6 +206,20 @@ def check_login():
         except ApiError as e:
             print(f"✗ {platform}: {e}")
             ok = False
+    if os.environ.get("TIKTOK_REFRESH_TOKEN"):
+        import tiktok
+        try:
+            user, scope, token = tiktok.whoami()
+            mode = os.environ.get("TIKTOK_MODE") or "inbox"
+            print(f"✓ tiktok: вход выполнен — {user.get('display_name')}; режим «{mode}»; разрешения: {scope}")
+            if mode == "direct":
+                info = tiktok.creator_info(token)
+                print(f"✓ tiktok: прямая публикация доступна, видимость: {', '.join(info.get('privacy_level_options', []))}")
+        except tiktok.TikTokError as e:
+            print(f"✗ tiktok: {e}")
+            ok = False
+    else:
+        print("· tiktok: ещё не подключён")
     sys.exit(0 if ok else 1)
 
 

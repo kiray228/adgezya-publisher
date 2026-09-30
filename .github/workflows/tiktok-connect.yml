@@ -1,0 +1,24 @@
+name: "TikTok: подключение"
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "код со страницы после входа в TikTok"
+        required: true
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Обменять код на ключ
+        env:
+          TIKTOK_CODE: ${{ github.event.inputs.code }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: python tiktok_connect.py

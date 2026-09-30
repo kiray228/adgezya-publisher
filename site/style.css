@@ -1,0 +1,22 @@
+:root { --navy: #0B2548; --blue: #2169B0; --amber: #F2A900; --ink: #1d2733; --bg: #f5f7fa; --card: #fff; --muted: #5b6776; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --ink: #e8edf3; --bg: #0e1622; --card: #162131; --muted: #9aa8b8; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
+header { background: var(--navy); color: #fff; padding: 20px 16px; }
+header .wrap { display: flex; align-items: center; gap: 12px; }
+header img { width: 40px; height: 40px; border-radius: 10px; }
+header b { font-size: 20px; letter-spacing: .5px; }
+.wrap { max-width: 760px; margin: 0 auto; }
+main { padding: 24px 16px 48px; }
+.card { background: var(--card); border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+h1 { font-size: 26px; margin: 0 0 8px; }
+h2 { font-size: 18px; margin: 24px 0 6px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--blue); }
+code.box { display: block; padding: 14px; border-radius: 8px; background: var(--bg); border: 2px dashed var(--amber);
+  font: 15px/1.4 Consolas, monospace; word-break: break-all; margin: 12px 0; }
+button { background: var(--amber); color: var(--navy); border: 0; border-radius: 999px; padding: 10px 20px;
+  font-weight: 700; font-size: 15px; cursor: pointer; }
