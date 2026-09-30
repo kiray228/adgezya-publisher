@@ -177,6 +177,17 @@ def check_login():
         try:
             me = call("GET", url, {"fields": fields, "access_token": token})
             print(f"✓ {platform}: вход выполнен — @{me.get('username')} ({me.get('account_type', 'аккаунт')})")
+            # лимит публикаций отвечает, только если у ключа есть право публиковать
+            if platform == "instagram":
+                uid = me.get("user_id") or me["id"]
+                lim = call("GET", f"{IG_API}/{uid}/content_publishing_limit",
+                           {"fields": "quota_usage,config", "access_token": token})
+            else:
+                lim = call("GET", f"{TH_API}/me/threads_publishing_limit",
+                           {"fields": "quota_usage,config", "access_token": token})
+            d = (lim.get("data") or [{}])[0]
+            print(f"✓ {platform}: право публикации есть — использовано {d.get('quota_usage', 0)} "
+                  f"из {(d.get('config') or {}).get('quota_total', '?')} публикаций за сутки")
         except ApiError as e:
             print(f"✗ {platform}: {e}")
             ok = False
