@@ -64,6 +64,7 @@ def exchange_code(code):
         "client_key": os.environ["TIKTOK_CLIENT_KEY"], "client_secret": os.environ["TIKTOK_CLIENT_SECRET"],
         "code": code.strip(), "grant_type": "authorization_code", "redirect_uri": REDIRECT_URI})
     _save_secret("TIKTOK_REFRESH_TOKEN", res["refresh_token"])
+    os.environ["TIKTOK_REFRESH_TOKEN"] = res["refresh_token"]
     return res
 
 
