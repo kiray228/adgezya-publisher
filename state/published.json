@@ -1,6 +1,12 @@
 {
  "post_2": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18116024365996299",
+   "permalink": "https://www.instagram.com/p/Dd9UniWmp-2/",
+   "at": "2026-10-01T21:18+05:00",
+   "error": null
+  }
  },
  "post_3": {
   "instagram": {}
@@ -27,6 +33,63 @@
   "instagram": {}
  },
  "tiktok_test": {
-  "tiktok": {}
+  "tiktok": {
+   "status": "ok",
+   "media_id": "v_inbox_file~v2.7691733952935086098",
+   "permalink": "черновик во «Входящих» TikTok — откройте и опубликуйте",
+   "at": "2026-10-01T21:18+05:00",
+   "error": null
+  }
+ },
+ "blago": {
+  "instagram": {},
+  "threads": {}
+ },
+ "threads_q1": {
+  "threads": {}
+ },
+ "reel_mif": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "balkon": {
+  "instagram": {},
+  "threads": {}
+ },
+ "reel_vorota": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "gabion": {
+  "instagram": {},
+  "threads": {}
+ },
+ "threads_q2": {
+  "threads": {}
+ },
+ "reel_perepiska": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "vidy": {
+  "instagram": {},
+  "threads": {}
+ },
+ "reel_tirlist": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "flags": {
+  "instagram": {},
+  "threads": {}
+ },
+ "reel_from_a": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
  }
 }
