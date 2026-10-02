@@ -45,14 +45,14 @@
   "instagram": {
    "status": "blocked",
    "attempts": 0,
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"An_xAnZXCgq_xlEBImly94Z\"}}",
-   "at": "2026-10-02T13:23+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Al0JDLavr3khchKW7Uuc6R1\"}}",
+   "at": "2026-10-02T20:42+05:00"
   },
   "threads": {
    "status": "blocked",
    "attempts": 0,
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Al51_npGRH_oOBzCJDjh-HO\"}}",
-   "at": "2026-10-02T13:23+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AHg_hIBJl9zMaukawAG0Eur\"}}",
+   "at": "2026-10-02T20:42+05:00"
   }
  },
  "threads_q1": {
@@ -60,7 +60,13 @@
  },
  "reel_mif": {
   "instagram": {},
-  "tiktok": {},
+  "tiktok": {
+   "status": "ok",
+   "media_id": "v_inbox_file~v2.7692095956237600776",
+   "permalink": "черновик во «Входящих» TikTok — откройте и опубликуйте",
+   "at": "2026-10-02T20:42+05:00",
+   "error": null
+  },
   "threads": {}
  },
  "balkon": {
@@ -98,6 +104,26 @@
   "threads": {}
  },
  "reel_from_a": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "reel_ugaday": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "reel_sborka": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "reel_podborka": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "reel_voprosy": {
   "instagram": {},
   "tiktok": {},
   "threads": {}
