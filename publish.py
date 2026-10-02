@@ -236,6 +236,7 @@ def main():
     now = datetime.now(ALMATY)
     failed = False
     blocked = set()   # платформы, где в этом запуске Meta ответила «доступ заблокирован»
+    done = set()      # не больше одной публикации на сеть за запуск: после простоя накопившееся выходит по одной в час
 
     for item in queue:
         iid = item["id"]
@@ -253,7 +254,7 @@ def main():
             if st.get("attempts", 0) >= MAX_ATTEMPTS and not only:
                 print(f"✗ {iid} → {platform}: {MAX_ATTEMPTS} неудачных попыток, пропускаю (последняя ошибка: {st.get('error')})")
                 continue
-            if platform in blocked:
+            if platform in blocked or (platform in done and not only):
                 continue
             if dry:
                 links = ", ".join(f"{m} [{check_url(media_url(m))}]" for m in item.get("media", []))
@@ -269,6 +270,7 @@ def main():
                 mid, link = fn(item, token)
                 st.update(status="ok", media_id=mid, permalink=link, at=now.isoformat(timespec="minutes"), error=None)
                 print(f"✓ {iid} → {platform}: {link}")
+                done.add(platform)
             except Exception as e:  # noqa: BLE001
                 if any(m in str(e) for m in BLOCKED_MARKERS):
                     blocked.add(platform)
