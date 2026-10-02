@@ -24,6 +24,9 @@ STATE = os.path.join(HERE, "state", "published.json")
 ALMATY = timezone(timedelta(hours=5))  # Казахстан — единый UTC+5
 MEDIA_BASE = os.environ.get("MEDIA_BASE", "https://kiray228.github.io/adgezya-publisher/").rstrip("/") + "/"
 MAX_ATTEMPTS = 3
+# Meta заблокировала доступ к API для приложения/аккаунта разработчика: публикация невозможна, но вины поста нет —
+# попытки не тратим, ждём разблокировки и публикуем всё накопившееся по порядку
+BLOCKED_MARKERS = ("API access blocked",)
 
 IG_API = "https://graph.instagram.com/v23.0"
 TH_API = "https://graph.threads.net/v1.0"
@@ -232,6 +235,7 @@ def main():
     state = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else {}
     now = datetime.now(ALMATY)
     failed = False
+    blocked = set()   # платформы, где в этом запуске Meta ответила «доступ заблокирован»
 
     for item in queue:
         iid = item["id"]
@@ -249,6 +253,8 @@ def main():
             if st.get("attempts", 0) >= MAX_ATTEMPTS and not only:
                 print(f"✗ {iid} → {platform}: {MAX_ATTEMPTS} неудачных попыток, пропускаю (последняя ошибка: {st.get('error')})")
                 continue
+            if platform in blocked:
+                continue
             if dry:
                 links = ", ".join(f"{m} [{check_url(media_url(m))}]" for m in item.get("media", []))
                 print(f"▶ {iid} → {platform}: опубликую сейчас; файлы: {links or 'нет'}")
@@ -264,6 +270,12 @@ def main():
                 st.update(status="ok", media_id=mid, permalink=link, at=now.isoformat(timespec="minutes"), error=None)
                 print(f"✓ {iid} → {platform}: {link}")
             except Exception as e:  # noqa: BLE001
+                if any(m in str(e) for m in BLOCKED_MARKERS):
+                    blocked.add(platform)
+                    st.update(status="blocked", error=str(e)[:500], at=now.isoformat(timespec="minutes"))
+                    print(f"⏸ {iid} → {platform}: Meta заблокировала доступ к API — жду разблокировки, попытку не считаю")
+                    failed = True
+                    continue
                 st.update(status="error", attempts=st.get("attempts", 0) + 1, error=str(e)[:500],
                           at=now.isoformat(timespec="minutes"))
                 print(f"✗ {iid} → {platform}: {e}")

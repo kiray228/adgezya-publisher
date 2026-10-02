@@ -43,14 +43,14 @@
  },
  "blago": {
   "instagram": {
-   "status": "error",
-   "attempts": 1,
+   "status": "blocked",
+   "attempts": 0,
    "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"An_xAnZXCgq_xlEBImly94Z\"}}",
    "at": "2026-10-02T13:23+05:00"
   },
   "threads": {
-   "status": "error",
-   "attempts": 1,
+   "status": "blocked",
+   "attempts": 0,
    "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Al51_npGRH_oOBzCJDjh-HO\"}}",
    "at": "2026-10-02T13:23+05:00"
   }
