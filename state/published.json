@@ -45,14 +45,14 @@
   "instagram": {
    "status": "blocked",
    "attempts": 0,
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2-zzNe6J1kmIfOiwKGqFm7\"}}",
-   "at": "2026-10-03T17:26+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AAgfDeV9B7qJS2LNOB6o1g5\"}}",
+   "at": "2026-10-03T22:10+05:00"
   },
   "threads": {
    "status": "blocked",
    "attempts": 0,
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AUi7OotMS7lC-53H1AnGVyM\"}}",
-   "at": "2026-10-03T17:26+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AF4CfddHhEztbLoXmnx8Zp5\"}}",
+   "at": "2026-10-03T22:10+05:00"
   }
  },
  "threads_q1": {
@@ -75,7 +75,13 @@
  },
  "reel_vorota": {
   "instagram": {},
-  "tiktok": {},
+  "tiktok": {
+   "status": "ok",
+   "media_id": "v_inbox_file~v2.7692490019511158785",
+   "permalink": "черновик во «Входящих» TikTok — откройте и опубликуйте",
+   "at": "2026-10-03T22:10+05:00",
+   "error": null
+  },
   "threads": {}
  },
  "gabion": {
