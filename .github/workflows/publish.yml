@@ -2,7 +2,7 @@ name: Публикация по расписанию
 
 on:
   schedule:
-    - cron: "5 * * * *"   # каждый час в :05 (UTC); время постов в queue.json — по Алматы
+    - cron: "*/15 * * * *"   # каждые 15 минут (GitHub часто пропускает запуски); время постов в queue.json — по Алматы
   workflow_dispatch:
     inputs:
       only:
