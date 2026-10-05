@@ -46,7 +46,13 @@
   "threads": {}
  },
  "threads_q1": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18090128777214706",
+   "permalink": "https://www.threads.com/@adgezya/post/DeIJnGED_HQ",
+   "at": "2026-10-06T02:14+05:00",
+   "error": null
+  }
  },
  "reel_mif": {
   "instagram": {},
@@ -109,8 +115,20 @@
   }
  },
  "reel_tirlist": {
-  "instagram": {},
-  "tiktok": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18116610802975370",
+   "permalink": "https://www.instagram.com/reel/DeIJoQDlXx-/",
+   "at": "2026-10-06T02:14+05:00",
+   "error": null
+  },
+  "tiktok": {
+   "status": "ok",
+   "media_id": "v_inbox_file~v2.7693294665236432917",
+   "permalink": "черновик во «Входящих» TikTok — откройте и опубликуйте",
+   "at": "2026-10-06T02:14+05:00",
+   "error": null
+  },
   "threads": {}
  },
  "flags": {
