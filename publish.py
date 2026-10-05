@@ -100,6 +100,10 @@ def ig_publish(item, token):
         cid = container({"media_type": "REELS", "video_url": media_url(media[0]), "caption": caption,
                          "share_to_feed": "true", "cover_url": media_url(item["cover"]) if item.get("cover") else None})
         wait_ready(lambda: status(cid), 600, "Instagram Reels")
+    elif kind == "story":  # сторис: картинка JPEG или видео; стикеры (опросы, ссылки) API не поддерживает
+        is_video = media[0].lower().endswith(".mp4")
+        cid = container({"media_type": "STORIES", "video_url" if is_video else "image_url": media_url(media[0])})
+        wait_ready(lambda: status(cid), 300 if is_video else 120, "Instagram сторис")
     else:
         raise ApiError(f"Instagram не умеет тип {kind}")
 
