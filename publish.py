@@ -207,6 +207,13 @@ def check_login():
             else:
                 lim = call("GET", f"{TH_API}/me/threads_publishing_limit",
                            {"fields": "quota_usage,config", "access_token": token})
+            if platform == "instagram" and os.environ.get("CHECK_STORY"):
+                # пробный контейнер сторис без публикации (неопубликованный контейнер сам истекает через сутки)
+                cid = call("POST", f"{IG_API}/{uid}/media", {"media_type": "STORIES", "access_token": token,
+                                                            "image_url": media_url(os.environ["CHECK_STORY"])})["id"]
+                wait_ready(lambda: call("GET", f"{IG_API}/{cid}", {"fields": "status_code", "access_token": token})
+                           .get("status_code"), 120, "пробная сторис")
+                print(f"✓ instagram: сторис принимаются (контейнер готов, НЕ опубликован): {os.environ['CHECK_STORY']}")
             d = (lim.get("data") or [{}])[0]
             print(f"✓ {platform}: право публикации есть — использовано {d.get('quota_usage', 0)} "
                   f"из {(d.get('config') or {}).get('quota_total', '?')} публикаций за сутки")

@@ -46,7 +46,7 @@ jobs:
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ -n "${{ github.event.inputs.only }}" ]; then ARGS="$ARGS --only ${{ github.event.inputs.only }}"; fi
-          if [ "${{ github.event.inputs.check }}" = "true" ]; then ARGS="--check"; fi
+          if [ "${{ github.event.inputs.check }}" = "true" ]; then ARGS="--check"; export CHECK_STORY=media/s12_word.jpg; fi
           python publish.py $ARGS
       - name: Сохранить журнал публикаций
         if: always()
