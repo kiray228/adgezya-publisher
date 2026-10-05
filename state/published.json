@@ -93,8 +93,20 @@
   "threads": {}
  },
  "vidy": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18219670804353244",
+   "permalink": "https://www.instagram.com/p/DeHVg2zG-yE/",
+   "at": "2026-10-05T18:38+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18632095675034008",
+   "permalink": "https://www.threads.com/@adgezya/post/DeHVqM5G_Kt",
+   "at": "2026-10-05T18:38+05:00",
+   "error": null
+  }
  },
  "reel_tirlist": {
   "instagram": {},
@@ -138,5 +150,146 @@
    "at": "2026-10-05T18:36+05:00",
    "error": null
   }
+ },
+ "st_q06": {
+  "instagram": {}
+ },
+ "st_t_from_a": {
+  "instagram": {}
+ },
+ "th_06": {
+  "threads": {}
+ },
+ "st_w07": {
+  "instagram": {}
+ },
+ "st_t_ugaday": {
+  "instagram": {}
+ },
+ "th_07": {
+  "threads": {}
+ },
+ "st_q08": {
+  "instagram": {}
+ },
+ "st_t_sborka": {
+  "instagram": {}
+ },
+ "st_f09": {
+  "instagram": {}
+ },
+ "th_09a": {
+  "threads": {}
+ },
+ "th_09b": {
+  "threads": {}
+ },
+ "st_t_podborka": {
+  "instagram": {}
+ },
+ "st_f10": {
+  "instagram": {}
+ },
+ "th_10": {
+  "threads": {}
+ },
+ "st_t_voprosy": {
+  "instagram": {}
+ },
+ "st_r11": {
+  "instagram": {}
+ },
+ "th_11": {
+  "threads": {}
+ },
+ "st_word": {
+  "instagram": {}
+ },
+ "slovar": {
+  "instagram": {},
+  "threads": {}
+ },
+ "threads_q3": {
+  "threads": {}
+ },
+ "st_t_klimat": {
+  "instagram": {}
+ },
+ "reel_klimat": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "st_question": {
+  "instagram": {}
+ },
+ "st_t_etot": {
+  "instagram": {}
+ },
+ "reel_etot": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "st_fact": {
+  "instagram": {}
+ },
+ "bingo": {
+  "instagram": {},
+  "threads": {}
+ },
+ "threads_q4": {
+  "threads": {}
+ },
+ "st_t_5let": {
+  "instagram": {}
+ },
+ "reel_5let": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "st_quiz": {
+  "instagram": {}
+ },
+ "st_t_priemka": {
+  "instagram": {}
+ },
+ "reel_priemka": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "st_friday": {
+  "instagram": {}
+ },
+ "podgotovka": {
+  "instagram": {},
+  "threads": {}
+ },
+ "threads_q5": {
+  "threads": {}
+ },
+ "st_t_cvet": {
+  "instagram": {}
+ },
+ "reel_cvet": {
+  "instagram": {},
+  "tiktok": {},
+  "threads": {}
+ },
+ "st_weekend": {
+  "instagram": {}
+ },
+ "citata": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_results": {
+  "instagram": {}
+ },
+ "opros": {
+  "instagram": {},
+  "threads": {}
  }
 }
