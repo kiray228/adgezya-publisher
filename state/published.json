@@ -45,14 +45,14 @@
   "instagram": {
    "status": "blocked",
    "attempts": 0,
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A2FiW5V47GXsA3ZByipCnIN\"}}",
-   "at": "2026-10-05T05:45+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A4CLPWUwomA0svKvaAeH8MM\"}}",
+   "at": "2026-10-05T11:51+05:00"
   },
   "threads": {
    "status": "blocked",
    "attempts": 0,
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AP9U9y_Z6ShluHr--1UB9lU\"}}",
-   "at": "2026-10-05T05:45+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"ADBZtw3GitLiqPPWbX0iHOL\"}}",
+   "at": "2026-10-05T11:51+05:00"
   }
  },
  "threads_q1": {
