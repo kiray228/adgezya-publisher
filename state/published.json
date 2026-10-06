@@ -178,9 +178,21 @@
   }
  },
  "reel_from_a": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18085144286704677",
+   "permalink": "https://www.instagram.com/reel/DeJ8yN1CX_d/",
+   "at": "2026-10-06T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18634376725012457",
+   "permalink": "https://www.threads.com/@adgezya/post/DeJ84jrEZLA",
+   "at": "2026-10-06T19:00+05:00",
+   "error": null
+  }
  },
  "reel_ugaday": {
   "instagram": {},
