@@ -12,7 +12,13 @@
   "instagram": {}
  },
  "post_4": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18130269001689651",
+   "permalink": "https://www.instagram.com/p/DeIo39HjbXw/",
+   "at": "2026-10-06T06:47+05:00",
+   "error": null
+  },
   "threads": {}
  },
  "post_5": {
@@ -129,7 +135,13 @@
    "at": "2026-10-06T02:14+05:00",
    "error": null
   },
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "17922804846427080",
+   "permalink": "https://www.threads.com/@adgezya/post/DeIo0KTHAoj",
+   "at": "2026-10-06T06:47+05:00",
+   "error": null
+  }
  },
  "flags": {
   "instagram": {},
