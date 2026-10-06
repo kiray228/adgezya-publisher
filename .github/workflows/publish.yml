@@ -19,14 +19,18 @@ on:
 
 permissions:
   contents: write
+  actions: write     # чтобы запуск мог перезапустить сам себя
 
 concurrency:
   group: publish
   cancel-in-progress: false
 
+# Расписание GitHub срабатывает раз в несколько часов, поэтому запуск не завершается сразу: ждёт время
+# ближайшего поста (publish.py --next), публикует, ждёт дальше — до ~5 ч 40 мин, затем перезапускает сам себя.
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -43,15 +47,34 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: |
+          git config user.name "adgezya-bot"
+          git config user.email "adgezya-bot@users.noreply.github.com"
+          save() {
+            git add state/published.json
+            git diff --cached --quiet || git commit -q -m "Журнал публикаций"
+            for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          }
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ -n "${{ github.event.inputs.only }}" ]; then ARGS="$ARGS --only ${{ github.event.inputs.only }}"; fi
           if [ "${{ github.event.inputs.check }}" = "true" ]; then ARGS="--check"; export CHECK_STORY=media/s12_word.jpg; fi
-          python publish.py $ARGS
-      - name: Сохранить журнал публикаций
-        if: always()
-        run: |
-          git config user.name "adgezya-bot"
-          git config user.email "adgezya-bot@users.noreply.github.com"
-          git add state/published.json
-          git diff --cached --quiet || (git commit -m "Журнал публикаций" && git push)
+          if [ -n "$ARGS" ]; then rc=0; python publish.py $ARGS || rc=$?; save; exit $rc; fi
+          fail=0
+          while :; do
+            git pull -q --rebase || true          # подхватить новые посты из queue.json
+            python publish.py || fail=1
+            save
+            wait=$(python publish.py --next); wait=${wait:-1800}
+            if [ "$wait" -lt 0 ]; then echo "очередь пуста"; break; fi
+            left=$((20400 - SECONDS))           # ~5 ч 40 мин на запуск (предел GitHub — 6 ч)
+            echo "следующий пост через $((wait / 60)) мин"
+            if [ "$wait" -gt "$left" ]; then if [ "$left" -gt 0 ]; then sleep "$left"; fi; break; fi
+            sleep "$wait"
+          done
+          echo "RELAUNCH=$([ "$wait" -ge 0 ] && echo yes || echo no)" >> "$GITHUB_ENV"
+          exit $fail
+      - name: Перезапуск
+        if: always() && env.RELAUNCH == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish.yml --repo "${{ github.repository }}"

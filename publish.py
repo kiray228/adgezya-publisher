@@ -237,7 +237,26 @@ def check_login():
     sys.exit(0 if ok else 1)
 
 
+def next_wait():
+    """Сколько секунд ждать следующего запуска: до ближайшего неопубликованного поста; если что-то уже просрочено
+    (очередь после простоя, блок, ошибка с оставшимися попытками) — 30 мин; -1 — очередь пуста."""
+    queue = json.load(open(QUEUE, encoding="utf-8"))
+    state = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else {}
+    now = datetime.now(ALMATY)
+    waits = []
+    for item in queue:
+        for platform in item["platforms"]:
+            st = state.get(item["id"], {}).get(platform, {})
+            if st.get("status") == "ok" or st.get("attempts", 0) >= MAX_ATTEMPTS:
+                continue
+            sec = (parse_when(item["when"]) - now).total_seconds()
+            waits.append(1800 if sec <= 0 else int(sec) + 20)
+    print(min(waits) if waits else -1)
+
+
 def main():
+    if "--next" in sys.argv:
+        return next_wait()
     if "--check" in sys.argv:
         check_login()
     dry = "--dry-run" in sys.argv
