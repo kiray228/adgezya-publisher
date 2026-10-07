@@ -219,9 +219,21 @@
   }
  },
  "reel_ugaday": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18216770632360432",
+   "permalink": "https://www.instagram.com/reel/DeMhhsSD-NE/",
+   "at": "2026-10-07T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18090550403204509",
+   "permalink": "https://www.threads.com/@adgezya/post/DeMhocajHTp",
+   "at": "2026-10-07T19:00+05:00",
+   "error": null
+  }
  },
  "reel_sborka": {
   "instagram": {},
