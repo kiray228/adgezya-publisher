@@ -90,8 +90,20 @@
   "threads": {}
  },
  "balkon": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18097560761188646",
+   "permalink": "https://www.instagram.com/p/DeLxdWLFXdm/",
+   "at": "2026-10-07T12:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18129365935685673",
+   "permalink": "https://www.threads.com/@adgezya/post/DeLxeuVFWjo",
+   "at": "2026-10-07T12:00+05:00",
+   "error": null
+  }
  },
  "reel_vorota": {
   "instagram": {},
