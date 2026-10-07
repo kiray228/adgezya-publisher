@@ -126,6 +126,8 @@ def th_publish(item, token):
 
     if kind == "text" or not media:
         cid = container({"media_type": "TEXT", "text": text})
+        # без ожидания Threads иногда отвечает «Media Not Found» (так пропал th_06 6.10)
+        wait_ready(lambda: status(cid), 120, "Threads текст")
     elif kind in ("image", "reel") and len(media) == 1:
         is_video = media[0].lower().endswith(".mp4")
         cid = container({"media_type": "VIDEO" if is_video else "IMAGE",
