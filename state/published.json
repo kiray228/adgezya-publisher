@@ -283,10 +283,22 @@
   }
  },
  "st_t_ugaday": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18105964352100235",
+   "permalink": "https://www.instagram.com/stories/adgezya/4002661213276456525",
+   "at": "2026-10-07T17:00+05:00",
+   "error": null
+  }
  },
  "th_07": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "17971935675152642",
+   "permalink": "https://www.threads.com/@adgezya/post/DeMT2Otm6f9",
+   "at": "2026-10-07T17:00+05:00",
+   "error": null
+  }
  },
  "st_q08": {
   "instagram": {}
