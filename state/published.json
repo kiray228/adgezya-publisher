@@ -314,10 +314,12 @@
  },
  "st_q08": {
   "instagram": {
-   "status": "error",
+   "status": "ok",
    "attempts": 1,
-   "error": "HTTP 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AkV_5ENTJgv4BXNSURJZzRU\"}}",
-   "at": "2026-10-08T10:00+05:00"
+   "error": null,
+   "at": "2026-10-08T10:30+05:00",
+   "media_id": "18466624417142862",
+   "permalink": "https://www.instagram.com/stories/adgezya/4003189743940465416"
   }
  },
  "st_t_sborka": {
