@@ -129,8 +129,20 @@
   "threads": {}
  },
  "gabion": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18190626751407370",
+   "permalink": "https://www.instagram.com/p/DeOWVXOlZmL/",
+   "at": "2026-10-08T12:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18435910354198837",
+   "permalink": "https://www.threads.com/@adgezya/post/DeOWcFtFcUj",
+   "at": "2026-10-08T12:00+05:00",
+   "error": null
+  }
  },
  "threads_q2": {
   "threads": {}
