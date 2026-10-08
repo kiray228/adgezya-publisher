@@ -157,7 +157,13 @@
   }
  },
  "threads_q2": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18221260030340079",
+   "permalink": "https://www.threads.com/@adgezya/post/DeO4lculv9P",
+   "at": "2026-10-08T17:00+05:00",
+   "error": null
+  }
  },
  "reel_perepiska": {
   "instagram": {},
@@ -347,7 +353,13 @@
   }
  },
  "st_t_sborka": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18637564189040761",
+   "permalink": "https://www.instagram.com/stories/adgezya/4003386232620807018",
+   "at": "2026-10-08T17:00+05:00",
+   "error": null
+  }
  },
  "st_f09": {
   "instagram": {}
