@@ -266,9 +266,21 @@
   }
  },
  "reel_sborka": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18151427308495397",
+   "permalink": "https://www.instagram.com/reel/DePGZC5FOjc/",
+   "at": "2026-10-08T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18138162277628586",
+   "permalink": "https://www.threads.com/@adgezya/post/DePGdaxCMyi",
+   "at": "2026-10-08T19:00+05:00",
+   "error": null
+  }
  },
  "reel_podborka": {
   "instagram": {},
