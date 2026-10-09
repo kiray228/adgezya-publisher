@@ -404,7 +404,13 @@
   }
  },
  "th_09b": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18104438354369999",
+   "permalink": "https://www.threads.com/@adgezya/post/DeRWg09G7sc",
+   "at": "2026-10-09T16:00+05:00",
+   "error": null
+  }
  },
  "st_t_podborka": {
   "instagram": {}
