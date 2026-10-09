@@ -295,9 +295,21 @@
   }
  },
  "reel_podborka": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18152872984555352",
+   "permalink": "https://www.instagram.com/reel/DeRrHisjRET/",
+   "at": "2026-10-09T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18120787804968693",
+   "permalink": "https://www.threads.com/@adgezya/post/DeRrMF9gWuN",
+   "at": "2026-10-09T19:00+05:00",
+   "error": null
+  }
  },
  "reel_voprosy": {
   "instagram": {},
