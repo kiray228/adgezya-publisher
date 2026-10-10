@@ -455,7 +455,13 @@
   }
  },
  "th_10": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18103865875991369",
+   "permalink": "https://www.threads.com/@adgezya/post/DeT7TspFoir",
+   "at": "2026-10-10T16:00+05:00",
+   "error": null
+  }
  },
  "st_t_voprosy": {
   "instagram": {}
