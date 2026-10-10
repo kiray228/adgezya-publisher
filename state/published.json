@@ -434,7 +434,13 @@
   }
  },
  "st_f10": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18344192956254889",
+   "permalink": "https://www.instagram.com/stories/adgezya/4004624140308750043",
+   "at": "2026-10-10T10:00+05:00",
+   "error": null
+  }
  },
  "th_10": {
   "threads": {}
