@@ -324,9 +324,21 @@
   }
  },
  "reel_voprosy": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18488764855107176",
+   "permalink": "https://www.instagram.com/reel/DeUP6ZUEyOc/",
+   "at": "2026-10-10T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18195186676387764",
+   "permalink": "https://www.threads.com/@adgezya/post/DeUP-sxD0As",
+   "at": "2026-10-10T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_tirlist": {
   "instagram": {
