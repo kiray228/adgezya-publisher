@@ -142,7 +142,13 @@
   }
  },
  "reel_vorota": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "17951996163328078",
+   "permalink": "https://www.instagram.com/reel/DeTmxcwCaKj/",
+   "at": "2026-10-10T13:00+05:00",
+   "error": null
+  },
   "tiktok": {
    "status": "ok",
    "media_id": "v_inbox_file~v2.7692490019511158785",
@@ -150,7 +156,13 @@
    "at": "2026-10-03T22:10+05:00",
    "error": null
   },
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18227320555334247",
+   "permalink": "https://www.threads.com/@adgezya/post/DeTm1a1ktpV",
+   "at": "2026-10-10T13:00+05:00",
+   "error": null
+  }
  },
  "gabion": {
   "instagram": {
