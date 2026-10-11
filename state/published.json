@@ -190,7 +190,13 @@
   }
  },
  "reel_perepiska": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "17978088785924986",
+   "permalink": "https://www.instagram.com/reel/DeWLgzlD3za/",
+   "at": "2026-10-11T13:00+05:00",
+   "error": null
+  },
   "tiktok": {
    "status": "ok",
    "media_id": "v_inbox_file~v2.7692874874416662536",
@@ -198,7 +204,13 @@
    "at": "2026-10-04T23:04+05:00",
    "error": null
   },
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18134578048634784",
+   "permalink": "https://www.threads.com/@adgezya/post/DeWLmpFlM8U",
+   "at": "2026-10-11T13:00+05:00",
+   "error": null
+  }
  },
  "vidy": {
   "instagram": {
