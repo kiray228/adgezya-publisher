@@ -59,8 +59,20 @@
   }
  },
  "post_7": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18133454707780700",
+   "permalink": "https://www.instagram.com/p/DeW0tFZEfRt/",
+   "at": "2026-10-11T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "17888158866475565",
+   "permalink": "https://www.threads.com/@adgezya/post/DeW0u0bkUwP",
+   "at": "2026-10-11T19:00+05:00",
+   "error": null
+  }
  },
  "post_8": {
   "instagram": {}
