@@ -506,7 +506,13 @@
   }
  },
  "th_11": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18016168898950199",
+   "permalink": "https://www.threads.com/@adgezya/post/DeWgGrGm4y3",
+   "at": "2026-10-11T16:00+05:00",
+   "error": null
+  }
  },
  "st_word": {
   "instagram": {}
