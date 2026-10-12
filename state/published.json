@@ -552,7 +552,13 @@
   }
  },
  "threads_q3": {
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18480002815115224",
+   "permalink": "https://www.threads.com/@adgezya/post/DeY-CHHG8Ak",
+   "at": "2026-10-12T15:00+05:00",
+   "error": null
+  }
  },
  "st_t_klimat": {
   "instagram": {}
