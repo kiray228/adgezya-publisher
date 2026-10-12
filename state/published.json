@@ -527,7 +527,13 @@
   }
  },
  "st_word": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18125678014807075",
+   "permalink": "https://www.instagram.com/stories/adgezya/4006073695613136014",
+   "at": "2026-10-12T10:00+05:00",
+   "error": null
+  }
  },
  "slovar": {
   "instagram": {},
