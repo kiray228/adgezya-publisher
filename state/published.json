@@ -570,9 +570,21 @@
   }
  },
  "reel_klimat": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18098696237660996",
+   "permalink": "https://www.instagram.com/reel/DeZZh5kjycV/",
+   "at": "2026-10-12T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18134715355655558",
+   "permalink": "https://www.threads.com/@adgezya/post/DeZZmVJl6Cg",
+   "at": "2026-10-12T19:00+05:00",
+   "error": null
+  }
  },
  "st_question": {
   "instagram": {}
