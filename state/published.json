@@ -689,5 +689,40 @@
  "reel_fundament": {
   "instagram": {},
   "threads": {}
+ },
+ "st_t_otkatnye": {
+  "instagram": {}
+ },
+ "reel_otkatnye": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_avtomatika": {
+  "instagram": {}
+ },
+ "reel_avtomatika": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_tirlist_vorot": {
+  "instagram": {}
+ },
+ "reel_tirlist_vorot": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_oshibki_vorot": {
+  "instagram": {}
+ },
+ "reel_oshibki_vorot": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_bitva_vorot": {
+  "instagram": {}
+ },
+ "reel_bitva_vorot": {
+  "instagram": {},
+  "threads": {}
  }
 }
