@@ -611,9 +611,21 @@
   }
  },
  "reel_etot": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18118289143974802",
+   "permalink": "https://www.instagram.com/reel/Deb-S50Gxnz/",
+   "at": "2026-10-13T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18108266321218844",
+   "permalink": "https://www.threads.com/@adgezya/post/Deb-XPMisgo",
+   "at": "2026-10-13T19:00+05:00",
+   "error": null
+  }
  },
  "st_fact": {
   "instagram": {}
