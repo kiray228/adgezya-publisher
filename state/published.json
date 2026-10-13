@@ -75,7 +75,13 @@
   }
  },
  "post_8": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18094235819156708",
+   "permalink": "https://www.instagram.com/p/DebVGSzG2SB/",
+   "at": "2026-10-13T13:00+05:00",
+   "error": null
+  }
  },
  "post_9": {
   "instagram": {}
@@ -661,6 +667,20 @@
   "instagram": {}
  },
  "opros": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_speedrun": {
+  "instagram": {}
+ },
+ "reel_speedrun": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_fundament": {
+  "instagram": {}
+ },
+ "reel_fundament": {
   "instagram": {},
   "threads": {}
  }
