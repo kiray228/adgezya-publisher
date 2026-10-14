@@ -671,9 +671,21 @@
   }
  },
  "reel_5let": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18117606695471127",
+   "permalink": "https://www.instagram.com/reel/DeejF2VjY10/",
+   "at": "2026-10-14T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "18119985565950036",
+   "permalink": "https://www.threads.com/@adgezya/post/DeejKSVD5bn",
+   "at": "2026-10-14T19:00+05:00",
+   "error": null
+  }
  },
  "st_quiz": {
   "instagram": {}
