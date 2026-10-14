@@ -637,8 +637,20 @@
   }
  },
  "bingo": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18119281948988089",
+   "permalink": "https://www.instagram.com/p/Ded549PG4SH/",
+   "at": "2026-10-14T13:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18181829893437671",
+   "permalink": "https://www.threads.com/@adgezya/post/Ded56o0mwzV",
+   "at": "2026-10-14T13:00+05:00",
+   "error": null
+  }
  },
  "threads_q4": {
   "threads": {}
