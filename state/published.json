@@ -703,7 +703,13 @@
   }
  },
  "st_t_priemka": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18093427007260046",
+   "permalink": "https://www.instagram.com/stories/adgezya/4008459654275743736",
+   "at": "2026-10-15T17:00+05:00",
+   "error": null
+  }
  },
  "reel_priemka": {
   "instagram": {},
