@@ -712,9 +712,21 @@
   }
  },
  "reel_priemka": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18227522512335784",
+   "permalink": "https://www.instagram.com/reel/DehH6TsivFA/",
+   "at": "2026-10-15T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "17999760225008939",
+   "permalink": "https://www.threads.com/@adgezya/post/DehIA8yDSE8",
+   "at": "2026-10-15T19:00+05:00",
+   "error": null
+  }
  },
  "st_friday": {
   "instagram": {}
