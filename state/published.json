@@ -688,7 +688,13 @@
   }
  },
  "st_quiz": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18040165040838086",
+   "permalink": "https://www.instagram.com/stories/adgezya/4008248026439001132",
+   "at": "2026-10-15T10:00+05:00",
+   "error": null
+  }
  },
  "st_t_priemka": {
   "instagram": {}
