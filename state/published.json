@@ -84,7 +84,13 @@
   }
  },
  "post_9": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "17968256379183840",
+   "permalink": "https://www.instagram.com/p/Deger1fG1Eo/",
+   "at": "2026-10-15T13:00+05:00",
+   "error": null
+  }
  },
  "tiktok_test": {
   "tiktok": {
