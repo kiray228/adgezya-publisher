@@ -763,7 +763,13 @@
   }
  },
  "st_t_cvet": {
-  "instagram": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18345418348283563",
+   "permalink": "https://www.instagram.com/stories/adgezya/4009184212515122428",
+   "at": "2026-10-16T17:00+05:00",
+   "error": null
+  }
  },
  "reel_cvet": {
   "instagram": {},
