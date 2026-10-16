@@ -738,8 +738,20 @@
   }
  },
  "podgotovka": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18026668640881139",
+   "permalink": "https://www.instagram.com/p/DejDmDYlqXI/",
+   "at": "2026-10-16T13:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "17894401599681281",
+   "permalink": "https://www.threads.com/@adgezya/post/DejDuPElnr-",
+   "at": "2026-10-16T13:00+05:00",
+   "error": null
+  }
  },
  "threads_q5": {
   "threads": {}
