@@ -772,9 +772,21 @@
   }
  },
  "reel_cvet": {
-  "instagram": {},
+  "instagram": {
+   "status": "ok",
+   "media_id": "18467328235186419",
+   "permalink": "https://www.instagram.com/reel/Dejsr5OAlXU/",
+   "at": "2026-10-16T19:00+05:00",
+   "error": null
+  },
   "tiktok": {},
-  "threads": {}
+  "threads": {
+   "status": "ok",
+   "media_id": "17915249745468402",
+   "permalink": "https://www.threads.com/@adgezya/post/DejszAjj5NZ",
+   "at": "2026-10-16T19:00+05:00",
+   "error": null
+  }
  },
  "st_weekend": {
   "instagram": {}
