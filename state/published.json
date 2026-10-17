@@ -831,8 +831,20 @@
   }
  },
  "reel_speedrun": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "17912477022470981",
+   "permalink": "https://www.instagram.com/reel/DemReg_jA-P/",
+   "at": "2026-10-17T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18158722393458795",
+   "permalink": "https://www.threads.com/@adgezya/post/DemRkEYDYXC",
+   "at": "2026-10-17T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_fundament": {
   "instagram": {}
