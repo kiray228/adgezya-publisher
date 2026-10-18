@@ -825,8 +825,20 @@
   }
  },
  "opros": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18115436512840068",
+   "permalink": "https://www.instagram.com/p/DeoGM6yFvDG/",
+   "at": "2026-10-18T12:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18124161626476265",
+   "permalink": "https://www.threads.com/@adgezya/post/DeoGOYFFp6B",
+   "at": "2026-10-18T12:00+05:00",
+   "error": null
+  }
  },
  "st_t_speedrun": {
   "instagram": {
