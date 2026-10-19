@@ -900,8 +900,20 @@
   }
  },
  "reel_otkatnye": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18172526542458543",
+   "permalink": "https://www.instagram.com/reel/DerbERnD2Iv/",
+   "at": "2026-10-19T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18073231034744751",
+   "permalink": "https://www.threads.com/@adgezya/post/DerbJ8Tju_3",
+   "at": "2026-10-19T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_avtomatika": {
   "instagram": {}
