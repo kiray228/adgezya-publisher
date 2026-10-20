@@ -925,8 +925,20 @@
   }
  },
  "reel_avtomatika": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18033267710892495",
+   "permalink": "https://www.instagram.com/reel/Det_3O0juhG/",
+   "at": "2026-10-20T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "17874986079593427",
+   "permalink": "https://www.threads.com/@adgezya/post/Det_-NzjwHI",
+   "at": "2026-10-20T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_tirlist_vorot": {
   "instagram": {}
