@@ -950,8 +950,18 @@
   }
  },
  "reel_tirlist_vorot": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "error",
+   "attempts": 1,
+   "error": "Instagram Reels: контейнер в статусе ERROR",
+   "at": "2026-10-21T19:00+05:00"
+  },
+  "threads": {
+   "status": "error",
+   "attempts": 1,
+   "error": "Threads: контейнер в статусе ERROR",
+   "at": "2026-10-21T19:00+05:00"
+  }
  },
  "st_t_oshibki_vorot": {
   "instagram": {}
