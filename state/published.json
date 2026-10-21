@@ -951,16 +951,20 @@
  },
  "reel_tirlist_vorot": {
   "instagram": {
-   "status": "error",
+   "status": "ok",
    "attempts": 1,
-   "error": "Instagram Reels: контейнер в статусе ERROR",
-   "at": "2026-10-21T19:00+05:00"
+   "error": null,
+   "at": "2026-10-21T19:31+05:00",
+   "media_id": "17963459007227629",
+   "permalink": "https://www.instagram.com/reel/DewoOe3D2ur/"
   },
   "threads": {
-   "status": "error",
+   "status": "ok",
    "attempts": 1,
-   "error": "Threads: контейнер в статусе ERROR",
-   "at": "2026-10-21T19:00+05:00"
+   "error": null,
+   "at": "2026-10-21T19:31+05:00",
+   "media_id": "18220937986353275",
+   "permalink": "https://www.threads.com/@adgezya/post/DewoUUKAcug"
   }
  },
  "st_t_oshibki_vorot": {
