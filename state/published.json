@@ -960,5 +960,40 @@
  "reel_bitva_vorot": {
   "instagram": {},
   "threads": {}
+ },
+ "st_t_sklad_zashchita": {
+  "instagram": {}
+ },
+ "reel_sklad_zashchita": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_egoza": {
+  "instagram": {}
+ },
+ "reel_egoza": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_pov_vor": {
+  "instagram": {}
+ },
+ "reel_pov_vor": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_stroyploshchadka": {
+  "instagram": {}
+ },
+ "reel_stroyploshchadka": {
+  "instagram": {},
+  "threads": {}
+ },
+ "st_t_faq_biznes": {
+  "instagram": {}
+ },
+ "reel_faq_biznes": {
+  "instagram": {},
+  "threads": {}
  }
 }
