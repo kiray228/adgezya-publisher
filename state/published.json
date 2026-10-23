@@ -1002,8 +1002,20 @@
   }
  },
  "reel_bitva_vorot": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "17912790342559100",
+   "permalink": "https://www.instagram.com/reel/De1uPrwjtMa/",
+   "at": "2026-10-23T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18145312000561385",
+   "permalink": "https://www.threads.com/@adgezya/post/De1uV8HD3iK",
+   "at": "2026-10-23T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_sklad_zashchita": {
   "instagram": {}
