@@ -1027,8 +1027,20 @@
   }
  },
  "reel_sklad_zashchita": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18110341181461328",
+   "permalink": "https://www.instagram.com/reel/De9ctRhCWWA/",
+   "at": "2026-10-26T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "17953468443270459",
+   "permalink": "https://www.threads.com/@adgezya/post/De9czYfgSAu",
+   "at": "2026-10-26T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_egoza": {
   "instagram": {}
