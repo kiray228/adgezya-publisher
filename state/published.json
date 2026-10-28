@@ -1077,8 +1077,20 @@
   }
  },
  "reel_pov_vor": {
-  "instagram": {},
-  "threads": {}
+  "instagram": {
+   "status": "ok",
+   "media_id": "18058569359595226",
+   "permalink": "https://www.instagram.com/reel/DfCmN__Dqrm/",
+   "at": "2026-10-28T19:00+05:00",
+   "error": null
+  },
+  "threads": {
+   "status": "ok",
+   "media_id": "18129696385858182",
+   "permalink": "https://www.threads.com/@adgezya/post/DfCmSCkEYB4",
+   "at": "2026-10-28T19:00+05:00",
+   "error": null
+  }
  },
  "st_t_stroyploshchadka": {
   "instagram": {}
