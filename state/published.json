@@ -1095,8 +1095,8 @@
  "st_t_stroyploshchadka": {
   "instagram": {
    "status": "blocked",
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AzLl3wWTRllLqk_GVxFCwIj\"}}",
-   "at": "2026-10-29T17:00+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"Annq-KkBm8xPyyjGQs_93cU\"}}",
+   "at": "2026-10-29T17:30+05:00"
   }
  },
  "reel_stroyploshchadka": {
