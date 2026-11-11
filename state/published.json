@@ -1095,16 +1095,16 @@
  "st_t_stroyploshchadka": {
   "instagram": {
    "status": "blocked",
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"A0bREJdEq645nV6SHza4UCz\"}}",
-   "at": "2026-11-11T07:49+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AlXcMlgEwU0HVOs50QJMeWH\"}}",
+   "at": "2026-11-11T08:19+05:00"
   }
  },
  "reel_stroyploshchadka": {
   "instagram": {},
   "threads": {
    "status": "blocked",
-   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AaYaibv62AEwlOnEM5vt4Bn\"}}",
-   "at": "2026-11-11T07:49+05:00"
+   "error": "HTTP 400: {\"error\":{\"message\":\"API access blocked.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AWJbrAVvICZc9mDfuak0RUL\"}}",
+   "at": "2026-11-11T08:19+05:00"
   }
  },
  "st_t_faq_biznes": {
